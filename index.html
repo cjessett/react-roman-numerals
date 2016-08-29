@@ -6,10 +6,12 @@
     <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
     <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
     <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
     <div id="example"></div>
     <script type="text/babel">
+
       var Input = React.createClass({
         getInitialState: function () {
           return {userInput: ""};
@@ -38,22 +40,24 @@
 
         render: function () {
           return (
-            <div>
+            <div id="container">
               <input type="text"
                      onChange={this.handleUserInput}
                      value={this.state.userInput} />
-              <h1>{this.state.userInput}</h1>
-              <br />
-              <h1>{this.toRoman(this.state.userInput)}</h1>
+              <div id="arabic">
+                <h1>Arabic</h1>
+                <h2>{this.state.userInput}</h2>
+              </div>
+              <div id="roman">
+                <h1>Roman</h1>
+                <h2>{this.toRoman(this.state.userInput)}</h2>
+              </div>
             </div>
           );
         }
       });
 
-      ReactDOM.render(
-        <Input />,
-        document.getElementById('example')
-      );
+      ReactDOM.render(<Input />, document.getElementById('example'));
     </script>
   </body>
 </html>

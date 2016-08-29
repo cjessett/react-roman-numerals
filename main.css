@@ -1,0 +1,28 @@
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 1em;
+  text-align: center;
+}
+
+input {
+  line-height: 27px;
+  font-size: 1em;
+}
+
+
+div#example {
+  margin: 1em;
+  padding: 1em;
+}
+
+div#arabic {
+  margin: 2em;
+  padding: 2em;
+}
+
+div#roman {
+  margin: 2em;
+  padding: 2em;
+}
+
