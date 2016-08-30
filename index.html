@@ -43,7 +43,8 @@
             <div id="container">
               <input type="text"
                      onChange={this.handleUserInput}
-                     value={this.state.userInput} />
+                     value={this.state.userInput}
+                     maxLength="5" />
               <div id="roman">
                 <h2>Roman Numeral</h2>
                 <h1>{this.toRoman(this.state.userInput)}</h1>

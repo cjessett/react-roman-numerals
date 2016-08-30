@@ -3,7 +3,11 @@ body {
   max-width: 50em;
   padding: 1em;
   text-align: center;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica';
+}
+
+h1, h2 {
+  font-weight: 200;
 }
 
 input {
