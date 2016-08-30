@@ -3,6 +3,7 @@ body {
   max-width: 50em;
   padding: 1em;
   text-align: center;
+  font-family: 'Helvetica', sans-serif;
 }
 
 input {
@@ -12,17 +13,18 @@ input {
 
 
 div#example {
-  margin: 1em;
-  padding: 1em;
+  margin-top: 10em;
+  align-items: center;
 }
 
-div#arabic {
+div#container {
   margin: 2em;
-  padding: 2em;
 }
 
 div#roman {
+  padding: 1em;
   margin: 2em;
-  padding: 2em;
+  font-size: 30px;
+  font-weight: 200;
 }
 

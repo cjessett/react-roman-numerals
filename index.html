@@ -44,13 +44,9 @@
               <input type="text"
                      onChange={this.handleUserInput}
                      value={this.state.userInput} />
-              <div id="arabic">
-                <h1>Arabic</h1>
-                <h2>{this.state.userInput}</h2>
-              </div>
               <div id="roman">
-                <h1>Roman</h1>
-                <h2>{this.toRoman(this.state.userInput)}</h2>
+                <h2>Roman Numeral</h2>
+                <h1>{this.toRoman(this.state.userInput)}</h1>
               </div>
             </div>
           );
