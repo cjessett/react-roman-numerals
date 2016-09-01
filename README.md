@@ -35,7 +35,7 @@ This is my roman numeral converter, I just threw it in the component to work. Pr
       i--;
     }
     return result
-  },
+  }
 ```
 And lastly, my render function. I bind the `handleUserInput` function to an `onChange` event on my input element.
 Then I pass that input through my `toRoman` function and display it in the `<h1>` tags.
@@ -53,7 +53,7 @@ render: function () {
       </div>
     </div>
   );
-}
+
 ```
 ### Finally the whole thing
 ```javascript
