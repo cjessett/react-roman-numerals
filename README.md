@@ -6,7 +6,7 @@ First I create a new react component with an inititial state of no user input.
 var Input = React.createClass({
   getInitialState: function () {
     return {userInput: ""};
-  },
+  });
 ```
 Next I add the function to handle the event of user input.
 ```javascript
@@ -16,7 +16,7 @@ var Input = React.createClass({
   },
   handleUserInput: function (e) {
     this.setState({userInput: e.target.value})
-  },
+  });
 ```
 This is my roman numeral converter, I just threw it in the component to work. Probably a better way to do this but it works.
 ```javascript
