@@ -1,13 +1,14 @@
 # A React Roman numeral converter 
 
 ## Breakdown of my react component
-
+First I create a new react component with an inititial state of no user input.
 ```javascript
 var Input = React.createClass({
   getInitialState: function () {
     return {userInput: ""};
   },
 ```
+Next I add the function to handle the event of user input.
 ```javascript
 var Input = React.createClass({
   getInitialState: function () {
@@ -36,7 +37,8 @@ This is my roman numeral converter, I just threw it in the component to work. Pr
     return result
   },
 ```
-And lastly, my render function.
+And lastly, my render function. I bind the `handleUserInput` function to an `onChange` event on my input element.
+Then I pass that input through my `toRoman` function and display it in the `<h1>` tags.
 ```javascript
 render: function () {
   return (
